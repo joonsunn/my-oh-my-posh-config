@@ -52,9 +52,9 @@ Fonts not showing up correctly in VS Code. Need to change font to one of the Ner
 
 Did not work for me. So had to add extra line in settings.json:
 
-'''json
+```bash
 "terminal.integrated.gpuAcceleration": "canvas"
-'''
+```
 
 More info: <https://github.com/ryanoasis/nerd-fonts/issues/831>
 
