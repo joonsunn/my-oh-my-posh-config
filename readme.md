@@ -50,6 +50,14 @@ Fonts not showing up correctly in VS Code. Need to change font to one of the Ner
 
 ![Alt text](image.png)
 
+Did not work for me. So had to add extra line in settings.json:
+
+'''json
+"terminal.integrated.gpuAcceleration": "canvas"
+'''
+
+More info: <https://github.com/ryanoasis/nerd-fonts/issues/831>
+
 ## Step 6 - Modify config file to add code execution time
 
 Make copy of any theme config to local folder with appropriate name
@@ -82,7 +90,7 @@ Add following to right segment of config:
 },
 ```
 
-## Step 7 - Added git segment.
+## Step 7 - Added git segment
 
 Built-in git segment does not have git status.
 
