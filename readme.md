@@ -33,7 +33,7 @@ Picked 'DroidSansM Nerd Font'
 Added the following line
 
 ```bash
-eval "$(oh-my-posh init bash"
+eval "$(oh-my-posh init bash)"
 ```
 
 ## Step 4 - Changed theme
