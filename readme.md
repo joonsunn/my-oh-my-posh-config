@@ -60,7 +60,7 @@ More info: <https://github.com/ryanoasis/nerd-fonts/issues/831>
 
 ## Step 6 - Modify config file to add code execution time
 
-Make copy of any theme config to local folder with appropriate name
+Make copy of desired base theme config to local folder with appropriate name
 
 ```bash
 ~/.config/oh-my-posh/themes/your-theme-config.json
