@@ -14,9 +14,18 @@
                     "type": "os"
                 },
                 {
+                    "type": "session",
+                    "style": "diamond",
+                    "foreground": "#ffffff",
+                    "background": "#252feb",
+                    "trailing_diamond": "",
+                    "template": " {{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }}",
+                    "powerline_symbol": ""
+                },
+                {
                     "background": "#0000ff",
                     "foreground": "#000000",
-                    "powerline_symbol": "\ue0b4",
+                    "powerline_symbol": "",
                     "properties": {
                         "style": "full"
                     },
@@ -25,15 +34,13 @@
                     "type": "root"
                 },
                 {
+                    "style": "powerline",
+                    "powerline_symbol": "",
                     "background": "#0000ff",
                     "foreground": "#ffffff",
-                    "powerline_symbol": "\ue0b4",
-                    "properties": {
-                        "style": "full"
-                    },
-                    "style": "powerline",
                     "template": " {{ .Path }} ",
-                    "type": "path"
+                    "type": "path",
+                    "properties": { "style": "agnoster_short" }
                 },
                 {
                     "type": "git",
@@ -82,8 +89,8 @@
             "segments": [
                 {
                     "type": "executiontime",
-                    "style": "powerline",
-                    "powerline_symbol": "",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b2",
                     "foreground": "#ffffff",
                     "background": "#8800dd",
                     "template": " \uf252 {{ .FormattedMs }} ",
